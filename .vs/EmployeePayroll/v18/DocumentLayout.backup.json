@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\C# Projects\\EmployeePayroll\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|e:\\c# projects\\employeepayroll\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|e:\\c# projects\\employeepayroll\\salaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|solutionrelative:salaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|e:\\c# projects\\employeepayroll\\payrollservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|solutionrelative:payrollservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|e:\\c# projects\\employeepayroll\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|solutionrelative:employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|e:\\c# projects\\employeepayroll\\payrollcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|solutionrelative:payrollcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|e:\\c# projects\\employeepayroll\\isalaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|solutionrelative:isalaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|e:\\c# projects\\employeepayroll\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|solutionrelative:employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|e:\\c# projects\\employeepayroll\\employeevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F11FB05-8D2F-2DD3-DBC9-425EC1260C80}|EmployeePayroll.csproj|solutionrelative:employeevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PayrollContext.cs",
+              "DocumentMoniker": "E:\\C# Projects\\EmployeePayroll\\PayrollContext.cs",
+              "RelativeDocumentMoniker": "PayrollContext.cs",
+              "ToolTip": "E:\\C# Projects\\EmployeePayroll\\PayrollContext.cs",
+              "RelativeToolTip": "PayrollContext.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T11:07:34.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SalaryRepository.cs",
+              "DocumentMoniker": "E:\\C# Projects\\EmployeePayroll\\SalaryRepository.cs",
+              "RelativeDocumentMoniker": "SalaryRepository.cs",
+              "ToolTip": "E:\\C# Projects\\EmployeePayroll\\SalaryRepository.cs",
+              "RelativeToolTip": "SalaryRepository.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAuwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T11:07:02.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ISalaryRepository.cs",
+              "DocumentMoniker": "E:\\C# Projects\\EmployeePayroll\\ISalaryRepository.cs",
+              "RelativeDocumentMoniker": "ISalaryRepository.cs",
+              "ToolTip": "E:\\C# Projects\\EmployeePayroll\\ISalaryRepository.cs",
+              "RelativeToolTip": "ISalaryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T12:05:47.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\C# Projects\\EmployeePayroll\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\C# Projects\\EmployeePayroll\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowCgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T11:36:12.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "E:\\C# Projects\\EmployeePayroll\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeRepository.cs",
+              "ToolTip": "E:\\C# Projects\\EmployeePayroll\\EmployeeRepository.cs",
+              "RelativeToolTip": "EmployeeRepository.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAowFQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T11:38:31.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PayrollService.cs",
+              "DocumentMoniker": "E:\\C# Projects\\EmployeePayroll\\PayrollService.cs",
+              "RelativeDocumentMoniker": "PayrollService.cs",
+              "ToolTip": "E:\\C# Projects\\EmployeePayroll\\PayrollService.cs",
+              "RelativeToolTip": "PayrollService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T11:57:34.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "E:\\C# Projects\\EmployeePayroll\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "EmployeeService.cs",
+              "ToolTip": "E:\\C# Projects\\EmployeePayroll\\EmployeeService.cs",
+              "RelativeToolTip": "EmployeeService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwCYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T11:38:26.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeValidator.cs",
+              "DocumentMoniker": "E:\\C# Projects\\EmployeePayroll\\EmployeeValidator.cs",
+              "RelativeDocumentMoniker": "EmployeeValidator.cs",
+              "ToolTip": "E:\\C# Projects\\EmployeePayroll\\EmployeeValidator.cs",
+              "RelativeToolTip": "EmployeeValidator.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T11:38:22.904Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
