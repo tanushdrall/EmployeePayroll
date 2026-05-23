@@ -51,6 +51,7 @@
 //}
 
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -59,9 +60,9 @@ namespace EmployeePayroll
     public class SalaryRepository : ISalaryRepository
     {
         private readonly PayrollContext _context;
-        private readonly IPayrollLogger _logger;
+        private readonly ILogger<SalaryRepository> _logger;
 
-        public SalaryRepository(PayrollContext context, IPayrollLogger logger)
+        public SalaryRepository(PayrollContext context, ILogger<SalaryRepository> logger)
         {
             _context = context;
             _logger = logger;
@@ -77,8 +78,8 @@ namespace EmployeePayroll
             }
             catch (Exception ex)
             {
-                _logger.Log($"Error retrieving salaries: {ex.Message}");
-                return new List<Salary>(); 
+                _logger.LogError(ex, "Error retrieving salaries");
+                return new List<Salary>();
             }
         }
 
@@ -86,17 +87,18 @@ namespace EmployeePayroll
         {
             try
             {
-                _context.Salaries.Add(salary); 
+                _context.Salaries.Add(salary);
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("Salary saved successfully for employee {Name}", salary.Employee?.Name);
             }
             catch (DbUpdateException dbEx)
             {
-                _logger.Log($"Database error while saving salary: {dbEx.Message}");
-                throw; 
+                _logger.LogError(dbEx, "Database error while saving salary for employee {Name}", salary.Employee?.Name);
+                throw;
             }
             catch (Exception ex)
             {
-                _logger.Log($"Unexpected error while saving salary: {ex.Message}");
+                _logger.LogError(ex, "Unexpected error while saving salary for employee {Name}", salary.Employee?.Name);
             }
         }
     }

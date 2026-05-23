@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace EmployeePayroll
 {
@@ -7,11 +8,11 @@ namespace EmployeePayroll
     {
         private readonly IEmployeeRepository _repository;
         private readonly IValidator<Employee> _validator;
-        private readonly IPayrollLogger _logger;
+        private readonly ILogger<EmployeeService> _logger;
 
         public EmployeeService(IEmployeeRepository repository,
                                IValidator<Employee> validator,
-                               IPayrollLogger logger)
+                               ILogger<EmployeeService> logger)
         {
             _repository = repository;
             _validator = validator;
@@ -24,17 +25,17 @@ namespace EmployeePayroll
             {
                 if (!_validator.Validate(employee))
                 {
-                    _logger.Log("Employee validation failed.");
+                    _logger.LogWarning("Employee validation failed for {Name}", employee.Name);
                     return null;
                 }
 
                 await _repository.AddAsync(employee);
-                _logger.Log($"Employee {employee.Name} added successfully.");
+                _logger.LogInformation("Employee {Name} added successfully", employee.Name);
                 return employee;
             }
             catch (Exception ex)
             {
-                _logger.Log($"Error adding employee: {ex.Message}");
+                _logger.LogError(ex, "Error adding employee {Name}", employee.Name);
                 return null;
             }
         }
@@ -47,7 +48,7 @@ namespace EmployeePayroll
             }
             catch (Exception ex)
             {
-                _logger.Log($"Error retrieving employees: {ex.Message}");
+                _logger.LogError(ex, "Error retrieving employees");
                 return new List<Employee>();
             }
         }

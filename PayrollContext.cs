@@ -12,12 +12,18 @@ namespace EmployeePayroll
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Employee>(entity =>
+            {
+                entity.Property(e => e.BaseSalary).HasColumnType("decimal(18,2)");
+            });
+
             modelBuilder.Entity<Salary>(entity =>  
             {
                 entity.Property(e => e.Deductions).HasColumnType("decimal(18,2)");
                 entity.Property(e => e.GrossSalary).HasColumnType("decimal(18,2)");
                 entity.Property(e => e.NetSalary).HasColumnType("decimal(18,2)");
             });
+
             modelBuilder.Entity<Department>().HasData(
                 new Department { Id = 1, Name = "HR" },
                 new Department { Id = 2, Name = "Finance" },

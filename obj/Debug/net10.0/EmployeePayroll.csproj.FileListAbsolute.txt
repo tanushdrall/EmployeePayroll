@@ -1,4 +1,5 @@
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\EmployeePayroll.exe
+E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\appsettings.json
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\EmployeePayroll.deps.json
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\EmployeePayroll.runtimeconfig.json
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\EmployeePayroll.dll
@@ -26,9 +27,14 @@ E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Caching.Me
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Json.dll
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
+E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Logging.dll
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
 E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Logging.Configuration.dll
@@ -152,15 +158,10 @@ E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\EmployeePayroll.GeneratedMSBuil
 E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\EmployeePayroll.AssemblyInfoInputs.cache
 E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\EmployeePayroll.AssemblyInfo.cs
 E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\EmployeePayroll.csproj.CoreCompileInputs.cache
+E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\EmployeePayroll.sourcelink.json
 E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\Employee.3F5464B0.Up2Date
 E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\EmployeePayroll.dll
 E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\refint\EmployeePayroll.dll
 E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\EmployeePayroll.pdb
 E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\EmployeePayroll.genruntimeconfig.cache
 E:\C# Projects\EmployeePayroll\obj\Debug\net10.0\ref\EmployeePayroll.dll
-E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\appsettings.json
-E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Configuration.FileExtensions.dll
-E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Json.dll
-E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Abstractions.dll
-E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
-E:\C# Projects\EmployeePayroll\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
