@@ -7,6 +7,6 @@ namespace EmployeePayroll
     public interface ISalaryCalculator
     {
         Salary Calculate(Employee employee);
-        object Calculate(object emp);
+       
     }
 }

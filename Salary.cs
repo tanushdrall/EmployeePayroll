@@ -14,7 +14,7 @@ namespace EmployeePayroll
         public string ProcessedBy { get; set; } = string.Empty;
 
         public DateTime Date { get; set; }
-        public Employee? Employee { get; set; }  //make nullable 
+        public Employee? Employee { get; set; }  
         
     }
 }
