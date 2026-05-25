@@ -1,8 +1,8 @@
 # Employee Payroll System
 
-A C# console application built with clean architecture principles.
-Covers SOLID, async/await, dependency injection, EF Core, logging, validation, and unit tests.
-All code written manually to build genuine understanding.
+A C# console application built with clean architecture.
+Covers SOLID principles, async/await, dependency injection, EF Core, logging, validation, and unit tests.
+All code written manually.
 
 ---
 
@@ -13,7 +13,7 @@ All code written manually to build genuine understanding.
 - Process payroll for all employees
 - Save salary records to SQL Server
 - Validate all input before processing
-- Log all operations consistently
+- Log all operations using ILogger consistently
 
 ---
 
@@ -21,25 +21,25 @@ All code written manually to build genuine understanding.
 
 ### SOLID
 ```
-S  →  Employee, EmployeeService, PayrollService, SalaryCalculator — each one job
+S  →  Employee, EmployeeService, PayrollService, SalaryCalculator — each one responsibility
 O  →  New calculator = new class, existing untouched
 L  →  Implementations swap via interfaces without breaking callers
 I  →  IEmployeeRepository, ISalaryCalculator, IValidator — focused interfaces
-D  →  All services depend on interfaces, injected via constructor
+D  →  All services depend on interfaces, constructor injected
 ```
 
 ### Dependency Injection
 ```
 ServiceCollection    →  registers all services
 BuildServiceProvider →  creates container
-Transient            →  new instance per request (services, repositories)
-Singleton            →  one instance (logger)
+Transient            →  new instance per resolve
+Singleton            →  one instance always
 GetRequiredService   →  throws if not registered
 ```
 
 ### Async/Await
 ```
-All repository methods use Async suffix
+All repository methods async
 SaveChangesAsync, ToListAsync, FindAsync throughout
 async Task Main
 No sync over async
@@ -47,49 +47,50 @@ No sync over async
 
 ### EF Core
 ```
-PayrollContext — DbSet for Employee, Department, Salary
+PayrollContext with DbSet for Employee, Department, Salary
 Code-first migrations
-HasData seeding for departments and employees
-HasColumnType decimal(18,2) for salary precision
-IDENTITY_INSERT awareness — Id set to 0 before insert
+HasData seeding
+HasColumnType decimal(18,2) for salary fields
+employee.Id = 0 before insert — avoids IDENTITY_INSERT
 ```
 
 ### Logging
 ```
-ILogger<T>       →  Microsoft built-in for repositories
-IPayrollLogger   →  custom interface for services
-LogInformation   →  success
-LogWarning       →  non-critical issues
-LogError         →  failures with exception
-EF Core noise filtered in AddLogging
+ILogger<T> used consistently throughout
+No Console.WriteLine in production code paths
+LogInformation  →  successful operations
+LogWarning      →  validation failures, invalid input
+LogError        →  exceptions with full context
+EF Core noise filtered via AddFilter
+logger declared before try block — available in catch
 ```
 
 ### Validation
 ```
 IValidator<T>        →  generic interface
-EmployeeValidator    →  name not empty, salary > 0, department > 0
+EmployeeValidator    →  name, salary > 0, department > 0
 Validated before any DB operation
 ```
 
 ### Error Handling
 ```
 try/catch in all repository and service methods
-DbUpdateException caught specifically for DB errors
-throw after log — caller aware of failure
-Inner try/catch in payroll loop — one failure does not stop others
+DbUpdateException caught specifically
+throw after log in critical paths
+Inner try/catch in payroll loop — one employee failure does not stop others
 ```
 
 ### Configuration
 ```
-appsettings.json  →  connection string
-Not hardcoded in code
+appsettings.json    →  connection string
+Not hardcoded in source code
 ConfigurationBuilder reads at startup
-Excluded from source control via .gitignore
+Excluded from source control
 ```
 
 ### Unit Tests
 ```
-EmployeeValidatorTests  →  7 cases
+EmployeeValidatorTests  →  8 cases
 SalaryCalculatorTests   →  calculation verified
 All passing
 ```
@@ -108,14 +109,12 @@ EmployeePayroll/
 ├── ISalaryRepository.cs
 ├── ISalaryCalculator.cs
 ├── IValidator.cs
-├── IPayrollLogger.cs
 ├── EmployeeRepository.cs
 ├── SalaryRepository.cs
 ├── EmployeeService.cs
 ├── PayrollService.cs
 ├── SalaryCalculator.cs
 ├── EmployeeValidator.cs
-├── ConsolePayrollILogger.cs
 ├── PayrollContext.cs
 ├── PayrollContextFactory.cs
 ├── appsettings.json
@@ -126,7 +125,7 @@ EmployeePayroll/
 
 ## How to run
 
-1. Add your connection string to appsettings.json
+1. Add connection string to appsettings.json
 2. Run migrations:
 ```bash
 dotnet ef migrations add InitialCreate
@@ -148,9 +147,23 @@ dotnet run
 3. View Employees
 4. Exit
 
-[PayrollLog] Payroll processed for Tanush, Net: 45000.00
-[PayrollLog] Payroll processed for Aditi, Net: 40500.00
-[PayrollLog] Payroll processed for Ravi, Net: 54000.00
+info: EmployeePayroll.PayrollService[0]
+      Payroll processed for Tanush, Net: 45000.00
+info: EmployeePayroll.SalaryRepository[0]
+      Salary saved successfully for employee Tanush
+```
+
+---
+
+## Known limitations
+
+```
+No authentication or authorization
+No role based access
+Console only — no web layer
+Department not validated against DB on add
+No update or delete via menu
+No CancellationToken in async methods
 ```
 
 ---
@@ -170,23 +183,17 @@ xunit.runner.visualstudio
 
 ---
 
-## Known limitations
+## Honest notes
 
-```
-No authentication or authorization
-No role based access
-Console only — no web layer
-Department not validated against DB on add
-No update or delete employee via menu
-No CancellationToken in async methods
-```
+This app was built iteratively with several correction passes.
+Known recurring issues during development included inconsistent logging approaches,
+swallowed exceptions, and naming inconsistencies.
+These were identified and addressed but worth noting honestly.
 
----
-
-## Author notes
+The app works and covers the stated concepts.
+Production readiness would require authentication, authorization,
+proper secret management, and more thorough testing.
 
 > All code written manually.
-> Practice over reading.
-> SOLID and DI are the foundation.
-> Stronghold never lets down.
+> Aware + Practice = Mastery.
 > All remain on Almighty.
